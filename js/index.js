@@ -30,7 +30,7 @@ div.classList.add( 'rounded-xl')
 div.classList.add( 'mb-5')
 // const newDate = new Date()
 div.innerHTML =`
-<h1 class="text-2xl">${addDonate} 6500 Taka is Donate for Flood at Noakhali, Bangladesh</h1>
+<h1 class="text-2xl">${addDonate} Taka is Donate for Flood at Noakhali, Bangladesh</h1>
 <p class="text-2xl bg-[#f5f2f2ca]">Date: ${new Date()}</p>
 `
 document.getElementById('history-container').appendChild(div);
