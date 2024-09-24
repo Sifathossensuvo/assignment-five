@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="lexend">
+    <header>
+        <nav class="py-5 bg-[#F9F7F3]">
+            <div class="px-8 lg:px-36 flex justify-between items-center">
+                <div><button id="nav-btn" class="btn bg-[#B4F461] text-lg font-bold">Home</button></div>
+                <div class="lg:flex items-center gap-3 hidden md:block">
+                    <div><img src="assets/logo.png" alt=""></div>
+                    <div>
+                        <h1 class="text-xl  font-bold">Donate Bangladesh</h1>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div><img src="assets/coin.png" alt=""></div>
+                    <div>
+                        <h1 class="text-xl font-bold text-[#6a6868]"><span id="donation-balance">5500</span> BDT</h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-3 lg:px-36 mt-12 text-5xl font-bold mb-5">
+        <!-- faq section -->
+        <section>
+            <h1>Important FAQ ?</h1>
+
+            <!-- faq -->
+            <div class="mt-10">
+                <div class="collapse collapse-arrow border-2 p-7">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-medium text-2xl">What is the document object model?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">The Document Object Model (DOM) is a programming interface for web documents.
+                            It represents the structure of an HTML or XML document as a tree of objects, where each
+                            element, attribute, and text is a node. The DOM allows programming languages like JavaScript
+                            to interact with and manipulate the content, structure, and styles of a webpage dynamically.
+                            It enables developers to add, modify, or remove elements and respond to user interactions.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border-2 p-7">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">How do you select an element from the dom?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">
+                            To select an element from the DOM, use document.getElementById('id') for selecting by ID.
+                            For class selection, use document.querySelector('.className'). If you want to select all
+                            matching elements, use document.querySelectorAll('.className'). You can also select elements
+                            by tag name using document.getElementsByTagName('tag').</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border-2 p-7">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">What is event delegation in the context of the DOM,
+                        and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">Event delegation is a technique in the DOM where a single event listener is
+                            attached to a parent element instead of multiple listeners on individual child elements.
+                            When an event occurs on a child element, it bubbles up to the parent, allowing the parent to
+                            handle the event. This approach is useful because it improves performance by reducing the
+                            number of event listeners and makes it easier to manage dynamic content, as new child
+                            elements will automatically inherit the parent's event listener without needing to add more
+                            listeners.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow border-2 p-7">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-2xl font-medium">How do you manipulate an elements attributes and
+                        styles using the dom?</div>
+                    <div class="collapse-content">
+                        <p class="text-lg">element.setAttribute('attributeName', 'value') to set an attribute and
+                            element.getAttribute('attributeName') to retrieve its value. For styles, you can modify
+                            inline styles by accessing the element.style property, such as element.style.backgroundColor
+                            = 'blue' to change the background color. You can also directly modify specific attributes
+                            like element.id or element.className. These methods enable dynamic changes to an element's
+                            attributes and styles based on user interactions.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="js/blog.js"></script>
+    <script src="js/librabry.js"></script>
+</body>
+
+</html>
